@@ -1,0 +1,25 @@
+Commands (methods/functions) you can give to files
+
+• close: Closes the file. Like File->Save... in your editor.
+
+• read: Reads the contents of the file. You can assign the result to a variable.
+
+• readline: Reads just one line of a text file.
+
+• truncate: Empties the file. Watch out if you care about the file.
+
+• write('stuff'): Writes “stuff” to the file.
+
+• seek(0): Moves the read/write location to the beginning of the file.
+
+w' for writing (truncating the file if
+   it already exists),
+
+'x' for creating and writing to a new file, and
+
+'a' for appending (which on some Unix systems, means that all writes
+   append to the end of the file regardless of the current seek position).
+
++ modifier, so you can do 'w+', 'r+', and 'a+'.
+This will open the file in both read and write mode and,
+depending on the character use, position the file in different ways.
